@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Playwrite+IN+Guides&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c27acce84b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+                <a href="/" id="navbar-logo">Engr.O.E.Bassey</a>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Otuekong</span> <br> Bassey from Nigeria</h1>
+            </div>
+        </div>
+    </div>
+
+<!----about----->
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/otuekong2.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a passionate and results-driven Web Developer with strong experience in building 
+                        responsive, user-friendly, and scalable web applications. I specialize in both
+                         front-end and back-end development, using modern technologies to turn ideas into 
+                         functional digital solutions.
+
+                        I code with HTML, CSS, JavaScript, PHP, and Python, and I have hands-on experience 
+                        working with the Django framework for developing secure and dynamic web applications.
+                        I enjoy writing clean, maintainable code and continuously improving my skills to
+                        keep up with evolving web technologies.
+
+                        I am committed to delivering high-quality solutions, solving problems efficiently,
+                         and collaborating effectively to create impactful web experiences.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')" >Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br> Web App development</li>
+                            <li><span>Data Analytics</span><br>Analysis data with great results</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - current</span><br>Web Developer at Shieldoeb Nigeria</li>
+                            <li><span>2021 - 2022</span><br>Wolfinplus web training Institute</li>
+                            <li><span>2021</span><br>N-Power software development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021</span><br>Web Developmet course at wolfinplus training institute</li>
+                            <li><span>2017</span><br> University Degree</li>
+                            <li><span>2010</span><br>Certificate on microsoft complete Microsoft package</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+<!-----services----->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Wed Design</h2>
+                    <p>Lorem ipsum dolor sit amet conse omnis asperiores sunt optio veritatis, fugit beatae facilis, ducimus enim, possimus quidem sint repudiandae deserunt! Repellendus consequuntur labore ut hic tempora asperiores aperiam maxime tempore unde qui. Molestias eum blanditiis pariatur vero autem quos, eos doloremque obcaecati!</p>
+                    <a href="#">learn more</a>
+                </div>
+
+                <div>
+                     <i class="fas fa-crop-alt"></i>
+                    <h2>UX/UI Design</h2>
+                    <p>Lorem ipsum dolor sit amet es sunt optio veritatis, fugit beatae facilis, ducimus enim, possimus quidem sint repudiandae deserunt! Repellendus consequuntur labore ut hic tempora asperiores aperiam maxime tempore unde qui. Molestias eum blanditiis pariatur vero autem quos, eos doloremque obcaecati!</p>
+                    <a href="#">learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Data Analysis</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. ae facilis, ducimus enim, possimus quidem sint repudiandae deserunt! Repellendus consequuntur labore ut hic tempora asperiores aperiam maxime tempore unde qui. Molestias eum blanditiis pariatur vero autem quos, eos doloremque obcaecati!</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- portfolio -->
+     
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/otubaba.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>This App connects you to the talented people around the world.
+                            download it from play store. </p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/otubaba.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>This App connects you to the talented people around the world.
+                            download it from play store. </p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/otubaba.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>This App connects you to the talented people around the world.
+                            download it from play store. </p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+<!------contact------>
+
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>07065688934</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="message" id="" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+                
+            </div>
+            <div class="copyright">
+                <p>Copyright O Bassey. Made with <i class="fas fa-heart"></i> by Easy Tutorials</p>
+            </div>
+        </div>
+    </div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classlist.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classlist.remove("active-tab");
+        }
+        event.currentTarget.classlist.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+    var sidemenu = getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.left = "0";
+    }
+    function closemenu(){
+        sidemenu.style.left = "-200px";
+    }
+</script>
+
+</body>
+
+
+
+</html>
